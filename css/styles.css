@@ -1,0 +1,88 @@
+/* Estilo base */
+body {
+    margin: 0;
+    padding: 0; /* Remove o espaçamento padrão */
+    font-family: 'Pacifico', cursive;
+    background: linear-gradient(180deg, #ffc4e8, #fff, #fff, #76cced);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    flex-direction: column; /* Alinha os elementos em coluna */
+    min-height: 100vh; /* Garante que o fundo cubra toda a altura */
+    text-align: center;
+    box-sizing: border-box; /* Garante que padding seja incluído na largura/altura */
+}
+
+/* Estilo do cabeçalho */
+header img {
+    width: 300px;
+    border-radius: 50%;
+    margin-top: 10px; /* Espaçamento acima da logo */
+}
+
+
+header h1 {
+    margin: 10px 0;
+    color: #333;
+    font-size: 40px;
+}
+
+/* Estilo dos links */
+.links {
+    width: 100%; /* Faz o bloco ocupar toda a largura disponível */
+    max-width: 600px; /* Define uma largura máxima */
+    padding: 10px; /* Espaçamento interno */
+    margin-top: 20px; /* Espaçamento superior */
+    transition: transform 0.3s ease;
+}
+
+.links a {
+    display: block;
+    text-decoration: none;
+    background: linear-gradient(90deg, #ffc4e8, #fff, #fff, #76cced);
+    color: #000000;
+    font-size: 28px; /* Tamanho da fonte para desktops */
+    font-weight: 600;
+    padding: 20px; /* Espaçamento interno maior para desktop */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 15px 0; /* Espaçamento entre os botões */
+    border: 1px solid #00000015; /* Borda preta adicionada */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.links a:hover {
+    color: #333; /* Cor do texto ao passar o mouse */
+    transform: scale(1.2); /* Efeito de zoom */
+}
+
+/* Estilo do rodapé */
+footer {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .links {
+        max-width: 300px; 
+    }
+    .links a {
+        font-size: 24px;
+        padding: 10px; /* Ajusta o espaçamento interno */
+        border: 1px solid #00000025; /* Mantém a borda, mas ajusta se necessário */
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    header h1 {
+        font-size: 50px; 
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
