@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0; /* Remove o espaçamento padrão */
-    font-family: 'Pacifico', cursive;
+    font-family: 'cursive';
     background: linear-gradient(180deg, #ffc4e8, #fff, #fff, #76cced);
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
